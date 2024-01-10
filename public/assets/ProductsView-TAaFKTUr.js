@@ -1,0 +1,1 @@
+import{d as n,o as s,k as _}from"./index-hyQisVAt.js";const a=(e,t)=>{const o=e.__vccOpts||e;for(const[c,r]of t)o[c]=r;return o},f={};function p(e,t){const o=_("RouterView");return s(),n(o)}const i=a(f,[["render",p]]);export{i as default};

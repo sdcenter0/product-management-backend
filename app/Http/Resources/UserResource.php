@@ -19,9 +19,9 @@ class UserResource extends JsonResource
 			'id' => $this->whenHas('id'),
 			'name' => $this->whenHas('name'),
 			'email' => $this->whenHas('email'),
-			'email_verified_at' => $this->whenHas('email_verified_at', fn() => $this->email_verified_at->diffForHumans()),
-			'created_at' => $this->whenHas('created_at', fn() => $this->created_at->diffForHumans()),
-			'updated_at' => $this->whenHas('updated_at', fn() => $this->updated_at->diffForHumans()),
+			'email_verified_at' => $this->whenHas('email_verified_at', fn() => $this->email_verified_at?->diffForHumans()),
+			'created_at' => $this->whenHas('created_at', fn() => $this->created_at?->diffForHumans()),
+			'updated_at' => $this->whenHas('updated_at', fn() => $this->updated_at?->diffForHumans()),
 		];
 	}
 }
